@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,spanish]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}%this can be changed
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\justify
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Alexander Passo Polanco.} \\ \vspace{1pt}
+    {\small Estudiante de Ing. Electrónica.} $|$ 
+    \faIcon{university}
+    \href{https://www.udea.edu.co}{Universidad de Antioquia}\\[2ex]
+    \vspace{1pt}
+    \small
+    \faIcon{envelope}
+    \href{mailto:alexander.passo@udea.edu.co}{alexander.passo@udea.edu.co}  $|$
+    \faIcon{envelope}
+    \href{mailto:alej2498@gmail.com}{alej2498@gmail.com} $|$ 
+    \faIcon{github}
+    \href{https://github.com/AlexanderPasso}{AlexanderPasso} $|$
+    \faIcon{phone}
+    {3146756152}
+    
+\end{center}
+
+
+%-----------Acerca de mi-----------
+\section{Acerca de mi }
+    \small{
+    \resumeItemListStart[leftmargin=0.15in, label={}]
+     
+        \resumeItem{Soy estudiante de Ingeniería Electrónica de septimo nivel y estudiante de la Tecnología de Redes de Telecomunicaciones. Me gusta la programación, tengo conocimientos en el desarrollo de algoritmos en \textbf{python} y \textbf{C++}, además \textbf{nociones básicas en HTML, CSS y bootstrap 4.} 
+        Me considero una persona con alto sentido ético, competente, tolerante y con capacidad de trabajar en equipo, además de tener actitud para el aprendizaje y desarrollo de mis actividades o funciones propuestas. Me gusta practicar deporte como el  fútbol y el tenis de mesa, además del gusto por la música.}
+        \resumeItemListEnd
+    
+
+%-----------Habilidades Tecnicas-----------
+\section{Habilidades Técnicas}
+ \begin{itemize}[leftmargin=0.15 in, label={}]
+    \small{\item{
+     \textbf{Programación}{: Python, C++, Matlab, PLC, Frontend con bootstrap 4 }\\
+     \textbf{Electrónica y Física}{: Análisis de circuitos eléctricos, simulación/diseño de software en SPICE(Ng/LT/pOrcad), VHDL, Eagle, Arduino, FPGA, simulación de redes(packet tracer).} \\
+     \textbf{Sistemas informáticos}{: Linux y Windows.} \\
+     \textbf{Habilidades blandas}{: Autodidacta, curioso, pasión por el aprendizaje}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+
+
+%-----------EXPERIENCE-----------
+\section{Industria y experiencia acádemica}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Asistente Proyecto ALIES }{Julio - 2022 (Actualmente)}
+      {Grupo GEPAR }{Universidad de Antioquia}
+      \resumeItemListStart
+        \resumeItem{Programación de PLC para la maquina seleccionadora de esquejes}
+        \resumeItem{Programación en python para la conexión entre PLC - Python con Snap7}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Asesor Comercial }{ 2018}
+      {ICELL, SA}{Caucasia, Antioquia}
+      \resumeItemListStart
+        \resumeItem{Venta de celulares}
+        \resumeItem{Asesoria comercial para productos tecnológicos, además de planes postpagos.}
+        
+      \resumeItemListEnd
+      
+% %-----------Multiple Positions Heading-----------
+%     \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%         \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+% %-------------------------------------------
+
+% Projects
+
+\section{Proyectos}
+    \begin{itemize}[leftmargin=0.15in]
+    \item[] \textbf{Robótica}
+        \small{
+        \begin{itemize}
+        
+        \item Ganador olimpiadas Tech Robótica con el grupo IAndertales (2022)
+        
+        \end{itemize}
+        }
+    \end{itemize}
+
+%Other Skills
+
+
+
+%-----------EDUCATION-----------
+\section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad de Antioquia}{Medellín, Antioquia}
+      {Estudiante Ingeniería Electrónica}{2019 - Actualmente}\\
+      
+    \resumeSubheading
+      {Instituto Tecnologico Metropolitano}{Medellín, Antioquia}
+      {Estudiante de la Tecnologia en Gestión de Redes de Telecomunicaciones}{2019 - Actualmente}\\
+      
+    \resumeSubheading
+      {Secundaria}{Caucasia, Antioquia}
+      {Colegio Divino Niño }{Finalización 2015}\\
+
+       \resumeSubheading
+      {Diseñando páginas web con Bootstrap 4}{Coursera}
+      {Universidad Austral}{2020}\\
+      
+   
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Referencias}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jefferson González Arias}{Universidad Nacional de Colombia}
+      {Politologo}{3105272333}\\
+      
+    \resumeSubheading
+      {Alexis Passo Polanco}{Universidad de Antioquia}
+      {Ingeniero Químico}{3136423818}\\
+    \resumeSubHeadingListEnd
+
+  
+\end{document}
